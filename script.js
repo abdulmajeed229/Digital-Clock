@@ -25,7 +25,9 @@ setInterval(() => {
     } else {
         ampm.innerText = "PM"
     }
-
+if( hour > 12){
+    hour = hour-12;
+}
 
     if (hour < 10) {
         hour = "0" + hour
